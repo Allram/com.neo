@@ -814,6 +814,7 @@
           4232,
           136
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2171/Siren User Manual Common V3_2.pdf",
         "pid": 2171,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17025443",
@@ -1369,6 +1370,7 @@
           8322,
           130
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1782/Door-Window User Guide.doc",
         "pid": 1782,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055076",
@@ -1466,6 +1468,7 @@
           8323,
           8333
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1920/Motion Detector User Guide EU V3.3.pdf",
         "pid": 1920,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16105298",
@@ -1828,6 +1831,7 @@
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4237,
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1920/Motion Detector User Guide EU V3.3.pdf",
         "pid": 1920,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16105298",
@@ -2254,6 +2258,7 @@
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4234,
+        "includeSecure": false,
         "wakeUpInterval": 0,
         "learnmode": {
           "image": "/drivers/NAS-RC01ZE/assets/learnmode.svg",
@@ -2372,6 +2377,7 @@
           4240,
           4239
         ],
+        "includeSecure": false,
         "wakeUpInterval": 0,
         "learnmode": {
           "image": "/drivers/NAS-RS01ZE/assets/learnmode.svg",
@@ -2395,6 +2401,7 @@
         "associationGroups": [
           1
         ],
+        "includeSecure": false,
         "associationGroupsOptions": {
           "1": {
             "hint": {
@@ -2445,6 +2452,7 @@
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4236,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/NAS-SC01ZE/assets/learnmode.svg",
           "instruction": {
@@ -2548,6 +2556,7 @@
           4235,
           139
         ],
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/NAS-SW01ZE/assets/learnmode.svg",
           "instruction": {
@@ -2671,6 +2680,7 @@
           4135,
           135
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1783/Smart-Plug User Guide V2.doc",
         "pid": 1783,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055074",
@@ -2972,6 +2982,7 @@
           4229,
           133
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1788/Water Leakage Detector User Manual V2.doc",
         "pid": 1788,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055075",
