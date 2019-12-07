@@ -8,6 +8,7 @@
     "manufacturerId": 600,
     "productTypeId": [3],
     "productId": [8327, 4231, 135],
+	"includeSecure": false,
     "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1783/Smart-Plug User Guide V2.doc",
     "pid": 1783,
     "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055074",
@@ -64,7 +65,6 @@
     ]
   },
   "class": "socket",
-  "includeSecure": false,
   "capabilities": [
     "onoff",
     "meter_power",
@@ -116,7 +116,7 @@
       "hint": {
         "en": "Enable (checked) the status led on top.\nParameter #5\nDefault: enabled = checked",
         "nl": "Schakel de status indicatie led functie in (checked).\nParameter #5\nStandaard: ingeschakeld = checked",
-        "en": "Aktiviert die Status led oben.\nParameter #5\nStandard: aktiviert = ausgewählt"
+        "de": "Aktiviert die Status led oben.\nParameter #5\nStandard: aktiviert = ausgewählt"
       }
     },
     {

@@ -5,7 +5,7 @@
     "en": "NEO Coolcam",
     "nl": "NEO Coolcam"
   },
-  "version": "2.1.0",
+  "version": "2.1.1",
   "compatibility": ">=3.0.0",
   "brandColor": "#ff66cc",
   "description": {
@@ -874,8 +874,10 @@
         "productTypeId": 3,
         "productId": [
           4232,
-          136
+          136,
+          24712
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2171/Siren User Manual Common V3_2.pdf",
         "pid": 2171,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17025443",
@@ -913,7 +915,6 @@
           "CR123A"
         ]
       },
-      "includeSecure": false,
       "capabilities": [
         "onoff",
         "alarm_siren",
@@ -1423,6 +1424,107 @@
       ]
     },
     {
+      "id": "NAS-CS01ZE",
+      "name": {
+        "en": "Curtain controller",
+        "nl": "Scherm controller",
+        "de": "Vorhang controller"
+      },
+      "zwave": {
+        "manufacturerId": 600,
+        "productTypeId": 512,
+        "productId": 4140,
+        "includeSecure": false,
+        "learnmode": {
+          "image": "/drivers/NAS-CS01ZE/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the middle button on youre controller three times quickly",
+            "nl": "Druk driemaal snel achter elkaar op de middelste knop van de controller",
+            "de": "Drücke den mittlere Knopf am controller dreimal schnell."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/NAS-CS01ZE/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the middle button on youre controller three times quickly",
+            "nl": "Druk driemaal snel achter elkaar op de middelste knop van de controller",
+            "de": "Drücke den mittlere Knopf am controller dreimal schnell."
+          }
+        },
+        "defaultConfiguration": [],
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_set",
+        "onoff"
+      ],
+      "icon": "/drivers/NAS-CS01ZE/assets/icon.svg",
+      "images": {
+        "large": "/drivers/NAS-CS01ZE/assets/images/large.jpg",
+        "small": "/drivers/NAS-CS01ZE/assets/images/small.jpg"
+      },
+      "settings": [
+        {
+          "id": "swap_updown",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "type": "checkbox",
+          "label": {
+            "en": "Swap Up/Down Button",
+            "nl": "Wissel omhoog en beneden knop",
+            "de": "Taste hoch und runter tauschen"
+          },
+          "value": true
+        },
+        {
+          "id": "swap_motorrotation",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
+          "type": "checkbox",
+          "label": {
+            "en": "Swap the motor rotation",
+            "nl": "Verander de draairichting van de motor",
+            "de": "Drehrichtung des Motors ändern"
+          }
+        },
+        {
+          "id": "backlight_enable",
+          "zwave": {
+            "index": 3,
+            "size": 1
+          },
+          "type": "checkbox",
+          "label": {
+            "en": "Controller LED state",
+            "nl": "Controler LED status",
+            "de": "Controller LED Status"
+          },
+          "value": true
+        },
+        {
+          "id": "move_led_indicator",
+          "zwave": {
+            "index": 4,
+            "size": 1
+          },
+          "type": "checkbox",
+          "label": {
+            "en": "Controller LED shows move state",
+            "nl": "Controler LED laat keuze zien",
+            "de": "Controller LED zeigt bewegung status"
+          },
+          "value": true
+        }
+      ]
+    },
+    {
       "id": "NAS-DS01ZE",
       "name": {
         "en": "Door Sensor",
@@ -1437,6 +1539,7 @@
           8322,
           130
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1782/Door-Window User Guide.doc",
         "pid": 1782,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055076",
@@ -1466,7 +1569,6 @@
           "CR2"
         ]
       },
-      "includeSecure": false,
       "capabilities": [
         "alarm_contact",
         "measure_battery"
@@ -1539,6 +1641,7 @@
           8323,
           8333
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1920/Motion Detector User Guide EU V3.3.pdf",
         "pid": 1920,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16105298",
@@ -1616,7 +1719,6 @@
           "CR123A"
         ]
       },
-      "includeSecure": false,
       "capabilities": [
         "alarm_motion",
         "measure_luminance",
@@ -1906,6 +2008,7 @@
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4237,
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1920/Motion Detector User Guide EU V3.3.pdf",
         "pid": 1920,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16105298",
@@ -1983,7 +2086,6 @@
           "CR123A"
         ]
       },
-      "includeSecure": false,
       "capabilities": [
         "alarm_motion",
         "measure_temperature",
@@ -2019,7 +2121,7 @@
         {
           "id": "motion_blink",
           "zwave": {
-            "index": 10,
+            "index": 11,
             "size": 1,
             "signed": false
           },
@@ -2091,27 +2193,6 @@
               }
             }
           ]
-        },
-        {
-          "id": "motion_eventreport",
-          "zwave": {
-            "index": 11,
-            "size": 1,
-            "signed": false
-          },
-          "type": "checkbox",
-          "_size": 1,
-          "label": {
-            "en": "Motion detection event report",
-            "nl": "Bewegingsdetectie gebeurtenis rapportage",
-            "de": "Bewegungsmelder Ereignis Meldung"
-          },
-          "value": true,
-          "hint": {
-            "en": "Enabled: The motion detected event will be sent to controller/gateway only once until device report motion cleared event. Disabled: The motion detected event will be sent to controller/gateway when device detects motion event. (#11, default: enabled = checked)",
-            "nl": "Ingeschakeld: De bewegingsdetectie gebeurtenis wordt eenmalig gerapporteerd aan de controller/gateway. Disabled: de bewegingsdetectie wordt bij elke detectie gerapporteerd aan de controller/gateway. (#11, standaard: ingeschakeld = checked)",
-            "de": "Aktiviert: Das Ereignis der Bewegungserkennung wird nur einmal an den Controller / das Gateway gesendet, bis das Gerät die Bewegungslöschung meldet. Deaktiviert: Das Ereignis der Bewegungserkennung wird an den Controller/Gateway gesendet, wenn das Gerät ein Bewegungsereignis erkennt. (#11, Standard: aktiviert = markiert)"
-          }
         },
         {
           "id": "re-trigger_interval",
@@ -2333,11 +2414,11 @@
           "CR3032"
         ]
       },
-      "includeSecure": false,
       "zwave": {
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4234,
+        "includeSecure": false,
         "wakeUpInterval": 0,
         "learnmode": {
           "image": "/drivers/NAS-RC01ZE/assets/learnmode.svg",
@@ -2454,7 +2535,6 @@
           "CR3032"
         ]
       },
-      "includeSecure": false,
       "zwave": {
         "manufacturerId": 600,
         "productTypeId": 3,
@@ -2462,6 +2542,7 @@
           4240,
           4239
         ],
+        "includeSecure": false,
         "wakeUpInterval": 0,
         "learnmode": {
           "image": "/drivers/NAS-RS01ZE/assets/learnmode.svg",
@@ -2535,6 +2616,7 @@
         "manufacturerId": 600,
         "productTypeId": 3,
         "productId": 4236,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/NAS-SC01ZE/assets/learnmode.svg",
           "instruction": {
@@ -2558,7 +2640,6 @@
         ]
       },
       "class": "socket",
-      "includeSecure": false,
       "capabilities": [
         "onoff"
       ],
@@ -2640,6 +2721,7 @@
           139,
           8331
         ],
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/NAS-SC02ZE/assets/learnmode.svg",
           "instruction": {
@@ -2678,7 +2760,6 @@
         }
       },
       "class": "socket",
-      "includeSecure": false,
       "capabilities": [
         "onoff"
       ],
@@ -2758,6 +2839,7 @@
         "productId": [
           4139
         ],
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/NAS-SC03ZE/assets/learnmode.svg",
           "instruction": {
@@ -2809,7 +2891,6 @@
         }
       },
       "class": "socket",
-      "includeSecure": false,
       "capabilities": [
         "onoff"
       ],
@@ -2893,6 +2974,7 @@
           4231,
           135
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1783/Smart-Plug User Guide V2.doc",
         "pid": 1783,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055074",
@@ -2950,7 +3032,6 @@
         ]
       },
       "class": "socket",
-      "includeSecure": false,
       "capabilities": [
         "onoff",
         "meter_power",
@@ -3002,8 +3083,9 @@
           },
           "value": true,
           "hint": {
-            "en": "Aktiviert die Status led oben.\nParameter #5\nStandard: aktiviert = ausgewählt",
-            "nl": "Schakel de status indicatie led functie in (checked).\nParameter #5\nStandaard: ingeschakeld = checked"
+            "en": "Enable (checked) the status led on top.\nParameter #5\nDefault: enabled = checked",
+            "nl": "Schakel de status indicatie led functie in (checked).\nParameter #5\nStandaard: ingeschakeld = checked",
+            "de": "Aktiviert die Status led oben.\nParameter #5\nStandard: aktiviert = ausgewählt"
           }
         },
         {
@@ -3196,6 +3278,7 @@
         "productId": [
           4135
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1783/Smart-Plug User Guide V2.doc",
         "pid": 1783,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055074",
@@ -3238,22 +3321,9 @@
               "de": "Ermöglicht das Senden von Benachrichtigungen an assozierte Geräte in dieser Gruppe (Hinzufügen der Z-Wave-ID von Relaisgeräten)."
             }
           }
-        },
-        "defaultConfiguration": [
-          {
-            "id": 2,
-            "size": 2,
-            "value": 300
-          },
-          {
-            "id": 6,
-            "size": 1,
-            "value": 80
-          }
-        ]
+        }
       },
       "class": "socket",
-      "includeSecure": false,
       "capabilities": [
         "onoff",
         "meter_power",
@@ -3294,7 +3364,7 @@
         {
           "id": "led_display",
           "zwave": {
-            "index": 5,
+            "index": 3,
             "size": 1
           },
           "type": "checkbox",
@@ -3305,14 +3375,34 @@
           },
           "value": true,
           "hint": {
-            "en": "Aktiviert die Status led oben.\nParameter #5\nStandard: aktiviert = ausgewählt",
-            "nl": "Schakel de status indicatie led functie in (checked).\nParameter #5\nStandaard: ingeschakeld = checked"
+            "en": "Enable (checked) the status led on top.\nParameter #3\nDefault: enabled = checked",
+            "nl": "Schakel de status indicatie led functie in (checked).\nParameter #3\nStandaard: ingeschakeld = checked",
+            "de": "Aktiviert die Status led oben.\nParameter #3\nStandard: aktiviert = ausgewählt"
+          }
+        },
+        {
+          "id": "physical_button_enabled",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
+          "type": "checkbox",
+          "label": {
+            "en": "Enable/Disable button function",
+            "nl": "Aan/Uit schakelen van knop functionaliteit",
+            "de": "Schalten die Tastenfunktion ein / aus"
+          },
+          "value": true,
+          "hint": {
+            "en": "When enabled (default), the button on the wall plug can be used to switch the load on/off.",
+            "nl": "Indien ingeschakeld (standaard), kan de knop op de stekker worden gebruikt om aan / uit te schakelen.",
+            "de": "Wenn aktiviert (Standardeinstellung), kann die Taste am Stecker zum Ein- und Ausschalten verwendet werden."
           }
         },
         {
           "id": "meter_report",
           "zwave": {
-            "index": 1,
+            "index": 6,
             "size": 1
           },
           "type": "checkbox",
@@ -3323,22 +3413,22 @@
           },
           "value": true,
           "hint": {
-            "en": "Enable (checked) sending meter report measure data to the Z-wave controller.\nParameter #1\nDefault: enabled = checked",
-            "nl": "Inschakelen (checked) van het versturen van meter rapportages naar de Z-wave controller.\nParameter#1\nStandaard: ingeschakeld = checked",
-            "de": "Aktiviert das Senden von Messdaten des Stromverbrauchs an den Z-Wave-Controller.\nParameter #1\nStandard: aktiviert = ausgewählt"
+            "en": "Enable (checked) sending meter report measure data to the Z-wave controller.\nParameter #6\nDefault: enabled = checked",
+            "nl": "Inschakelen (checked) van het versturen van meter rapportages naar de Z-wave controller.\nParameter#6\nStandaard: ingeschakeld = checked",
+            "de": "Aktiviert das Senden von Messdaten des Stromverbrauchs an den Z-Wave-Controller.\nParameter #6\nStandard: aktiviert = ausgewählt"
           }
         },
         {
           "id": "meter_report_interval",
           "zwave": {
-            "index": 2,
+            "index": 7,
             "size": 2,
             "signed": false
           },
           "type": "number",
           "attr": {
-            "min": 60,
-            "max": 65535
+            "min": 30,
+            "max": 32767
           },
           "value": 300,
           "label": {
@@ -3347,38 +3437,38 @@
             "de": "Stromzählermeldung Intervall (s)"
           },
           "hint": {
-            "en": "The amount of seconds between a Meter Report being send to controller. \nParameter #2\nRange: 60 - 65535\nDefault: 300",
-            "nl": "De tijd in seconden tussen de Meter rapportages die naar de controller worden verzonden. \nParameter #2\nBereik: 60 - 65535\nStandaard: 300",
-            "de": "Die Anzahl der Sekunden zwischen dem Senden eines Stromverbrauchsberichts an den Controller. \nParameter #2\nBereich: 60 - 6553535\nStandard: 300"
+            "en": "The amount of seconds between a Meter Report being send to controller. \nParameter #7\nRange: 60 - 32767\nDefault: 300",
+            "nl": "De tijd in seconden tussen de Meter rapportages die naar de controller worden verzonden. \nParameter #7\nBereik: 60 - 32767\nStandaard: 300",
+            "de": "Die Anzahl der Sekunden zwischen dem Senden eines Stromverbrauchsberichts an den Controller. \nParameter #7\nBereich: 60 - 32767\nStandard: 300"
           }
         },
         {
           "id": "power_report_change",
           "zwave": {
-            "index": 6,
-            "size": 1
+            "index": 9,
+            "size": 2
           },
           "type": "number",
           "attr": {
             "min": 1,
-            "max": 100
+            "max": 1600
           },
-          "value": 80,
+          "value": 50,
           "label": {
-            "en": "Power change [%]",
-            "nl": "Wijziging van vermogen [%]",
-            "de": "Stromverbrauch Änderung [%]"
+            "en": "Current change (x0.01A)",
+            "nl": "Wijziging van stroom (x0.01A)",
+            "de": "Stromverbrauch Änderung (x0.01A)"
           },
           "hint": {
-            "en": "The amount of power consumed must change to be reported to the controller.\nParameter #6\nRange: 1 - 100\nDefault: 80",
-            "nl": "De wijziging van die het vermogen moet ondergaan om gerapporteerd te worden naar de controller.\nParameter #6\nBereik: 1 - 100\nStandaard: 80",
-            "de": "Der aktuelle Stromverbrauch der sich ändern muss, damit er an den Controller gemeldet wird. \nParameter #6 \nBereich: 1 - 100 \nStandard: 80"
+            "en": "The amount of current consumed must change to be reported to the controller.\nParameter #6\nRange: 1 - 1600\nDefault: 50",
+            "nl": "De wijziging van die het vermogen moet ondergaan om gerapporteerd te worden naar de controller.\nParameter #6\nBereik: 1 - 1600\nStandaard: 50",
+            "de": "Der aktuelle Stromverbrauch der sich ändern muss, damit er an den Controller gemeldet wird. \nParameter #6 \nBereich: 1 - 1600 \nStandard: 50"
           }
         },
         {
           "id": "remember_state",
           "zwave": {
-            "index": 7,
+            "index": 1,
             "size": 1
           },
           "type": "checkbox",
@@ -3389,15 +3479,15 @@
           },
           "value": true,
           "hint": {
-            "en": "After power loss the relay will switch to last known state if enabled (checked) or remain off if disabled (unchecked).\nParameter #7\nDefault: enabled = checked)",
-            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked). \nParameter #7\nStandaard: uitgeschakeld = unchecked)",
-            "de": "Nach einem Stromausfall wechselt das Relais in den zuletzt bekannten Zustand, wenn aktiviert (ausgewählt) oder bleibt ausgeschaltet, wenn deaktiviert (nicht ausgewählt).\nParameter #7\nStandard: aktiviert = ausgewählt)"
+            "en": "After power loss the relay will switch to last known state if enabled (checked) or remain off if disabled (unchecked).\nParameter #1\nDefault: enabled = checked)",
+            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked). \nParameter #1\nStandaard: uitgeschakeld = unchecked)",
+            "de": "Nach einem Stromausfall wechselt das Relais in den zuletzt bekannten Zustand, wenn aktiviert (ausgewählt) oder bleibt ausgeschaltet, wenn deaktiviert (nicht ausgewählt).\nParameter #1\nStandard: aktiviert = ausgewählt)"
           }
         },
         {
           "id": "over_load_current",
           "zwave": {
-            "index": 3,
+            "index": 8,
             "size": 1
           },
           "type": "number",
@@ -3405,45 +3495,45 @@
             "min": 1,
             "max": 16
           },
-          "value": 13,
+          "value": 16,
           "label": {
             "en": "Maximum over-load current (A)",
             "nl": "Maximale over-load stroom (A)",
             "de": "Maximaler Überlaststrom (A)"
           },
           "hint": {
-            "en": "Defines the maximum current the plug can provide to the device connected to it. If the current consumed is greater than the value set, the plug will cut power.\nParameter #3\nRange: 1 - 16\nDefault: 13",
-            "nl": "Specificeert de maximale stroom dat de power plug mag leveren aan het apparaat dat aan de power plug gekoppeld is. Wanneer het huidige stroomverbruik groter is dan de ingestelde waarde, wordt de power plug uitgeschakeld. \nParameter #3\nBereik: 1 - 16\nStandaard: 13",
-            "de": "Definiert den maximalen Strom, den der Stecker für das angeschlossene Gerät liefern kann. Wenn der Stromverbrauch größer als der eingestellte Wert ist, unterbricht der Stecker die Stromversorgung \nParameter #3\nBereich: 1 - 16\nStandard: 13"
+            "en": "Defines the maximum current the plug can provide to the device connected to it. If the current consumed is greater than the value set, the plug will cut power.\nParameter #8\nRange: 1 - 16\nDefault: 13",
+            "nl": "Specificeert de maximale stroom dat de power plug mag leveren aan het apparaat dat aan de power plug gekoppeld is. Wanneer het huidige stroomverbruik groter is dan de ingestelde waarde, wordt de power plug uitgeschakeld. \nParameter #8\nBereik: 1 - 16\nStandaard: 13",
+            "de": "Definiert den maximalen Strom, den der Stecker für das angeschlossene Gerät liefern kann. Wenn der Stromverbrauch größer als der eingestellte Wert ist, unterbricht der Stecker die Stromversorgung \nParameter #8\nBereich: 1 - 16\nStandard: 13"
           }
         },
         {
           "id": "alarm_current",
           "zwave": {
-            "index": 4,
+            "index": 10,
             "size": 1
           },
           "type": "number",
           "attr": {
             "min": 1,
-            "max": 16
+            "max": 15
           },
-          "value": 12,
+          "value": 13,
           "label": {
             "en": "Upper alarm current (A)",
             "nl": "Bovenwaarde alarm stroom (A)",
             "de": "Oberer Alarmstrom (A)"
           },
           "hint": {
-            "en": "Defines the current the plug is allowed to provide to the device connected to it. If the alarm current is exceeded, the plug will send an alarm notification to the controller and LED will turn RED. Value specified has to be less or equal to 'Maximum over-load current'. \nParameter #4\nRange: 1 - 12\nDefault: 12",
-            "nl": "Specificeert de maximale stroom dat de power plug mag leveren aan het apparaat dat aan de power plug gekoppeld is. Wanneer het alarm stroom overschreden wordt, zal de power plug een alarm naar de controller versturen en de LED rood kleuren. De waarde moet kleiner of gelijk zijn aan 'Maximale over-load stroom'. \nParameter #4n\nBereik: 1 - 12\nStandaard: 12",
-            "de": "Definiert den Strom, den der Stecker für das angeschlossene Gerät liefern darf. Wenn der Alarmstrom überschritten wird, sendet der Stecker eine Alarmmeldung an den Controller und die LED leuchtet ROT. Der angegebene Wert muss kleiner oder gleich 'Maximaler Überlaststrom' sein. \nParameter #4\nBereich: 1 - 12\nStandard: 12"
+            "en": "Defines the current the plug is allowed to provide to the device connected to it. If the alarm current is exceeded, the plug will send an alarm notification to the controller and LED will turn YELLOW. Value specified has to be less or equal to 'Maximum over-load current'. \nParameter #10\nRange: 1 - 12\nDefault: 12",
+            "nl": "Specificeert de maximale stroom dat de power plug mag leveren aan het apparaat dat aan de power plug gekoppeld is. Wanneer het alarm stroom overschreden wordt, zal de power plug een alarm naar de controller versturen en de LED GEEL kleuren. De waarde moet kleiner of gelijk zijn aan 'Maximale over-load stroom'. \nParameter #10n\nBereik: 1 - 12\nStandaard: 12",
+            "de": "Definiert den Strom, den der Stecker für das angeschlossene Gerät liefern darf. Wenn der Alarmstrom überschritten wird, sendet der Stecker eine Alarmmeldung an den Controller und die LED leuchtet GELB. Der angegebene Wert muss kleiner oder gleich 'Maximaler Überlaststrom' sein. \nParameter #10\nBereich: 1 - 12\nStandard: 12"
           }
         },
         {
           "id": "time_switch_function",
           "zwave": {
-            "index": 8,
+            "index": 4,
             "size": 1
           },
           "type": "checkbox",
@@ -3454,32 +3544,33 @@
           },
           "value": false,
           "hint": {
-            "en": "Aktiviert die Zeitschaltfunktion. Wenn aktiviert (ausgewählt), schaltet sich der Netzstecker nach dem Einschalten nach der unter 'Ausschaltzeit' definierten Zeit aus. (#8, Standard: deaktiviert = nicht ausgewählt)",
-            "nl": "Inschakelen van de tijd uitschakel functie. Wanneer ingeschakeld (checked) zal de power plug na ingeschakeld te zijn, automatisch uitschakelen na de in 'Uitschakel tijdsduur' gedefinieerde tijd. \nParameter: 8, standaard: uitgeschakeld = unchecked)"
+            "en": "Enable the time switch off function. When enabled (checked), the power plug, after being switched on, will switch off after the defined time in 'Switch off time period'. (#4, default: disabled = unchecked)",
+            "nl": "Inschakelen van de tijd uitschakel functie. Wanneer ingeschakeld (checked) zal de power plug na ingeschakeld te zijn, automatisch uitschakelen na de in 'Uitschakel tijdsduur' gedefinieerde tijd. \nParameter: #4, standaard: uitgeschakeld = unchecked)",
+            "de": "Aktiviert die Zeitschaltfunktion. Wenn aktiviert (ausgewählt), schaltet sich der Netzstecker nach dem Einschalten nach der unter 'Ausschaltzeit' definierten Zeit aus. (#4, Standard: deaktiviert = nicht ausgewählt)"
           }
         },
         {
           "id": "time_switch_period",
           "zwave": {
-            "index": 9,
+            "index": 5,
             "size": 2,
             "signed": false
           },
           "type": "number",
           "attr": {
             "min": 1,
-            "max": 65535
+            "max": 32767
           },
-          "value": 150,
+          "value": 120,
           "label": {
             "en": "Switch off time period (min)",
             "nl": "Uitschakel tijdsduur (min)",
             "de": "Ausschaltzeit (min)"
           },
           "hint": {
-            "en": "The time period before switching off the power plug, if time function has been enabled in 'Time switch off function'. \nParameter: 9\nRange: 1 - 65535\nDefault: 150",
-            "nl": "De tijdsduur waarna de power plug zal uitschakelen, wanneer de tijd schakelings functie ingeschakeld is in 'Tijd uitschakel functie'. \nParameter: 9\nBereik: 1 - 65535\nStandaard: 150",
-            "de": "Die Zeitspanne bis zum Ausschalten des Power Plugs, wenn die Fuktion unter'Zeitschaltfunktion' aktiviert wurde. \nParameter: 9\nBereich: 1 - 6553535\nStandard: 150"
+            "en": "The time period before switching off the power plug, if time function has been enabled in 'Time switch off function'. \nParameter: 5\nRange: 1 - 32767\nDefault: 150",
+            "nl": "De tijdsduur waarna de power plug zal uitschakelen, wanneer de tijd schakelings functie ingeschakeld is in 'Tijd uitschakel functie'. \nParameter: 5\nBereik: 1 - 32767\nStandaard: 150",
+            "de": "Die Zeitspanne bis zum Ausschalten des Power Plugs, wenn die Fuktion unter'Zeitschaltfunktion' aktiviert wurde. \nParameter: 5\nBereich: 1 - 32767\nStandard: 150"
           }
         }
       ]
@@ -3497,8 +3588,10 @@
         "productId": [
           4229,
           133,
-          8325
+          8325,
+          24709
         ],
+        "includeSecure": false,
         "productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1788/Water Leakage Detector User Manual V2.doc",
         "pid": 1788,
         "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16055075",
@@ -3565,7 +3658,6 @@
           "CR14250"
         ]
       },
-      "includeSecure": false,
       "capabilities": [
         "alarm_water",
         "measure_battery",
